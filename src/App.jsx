@@ -12,13 +12,14 @@ function App() {
 
   return (
     <>
+   
     <div className='absolute top-20 left-10 ' >
       <GlobeDemo/>
     </div>
     <div>
       <Navbar/>
       <Main/>
-      <hr className='w-[80%] m-auto text-black '/>
+      <hr className='w-[80%] m-auto text-black h-[10px]'/>
     </div>
     </>
   )
