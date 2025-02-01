@@ -16,23 +16,23 @@ const Main = () => {
 
   return (
     <div className=" w-full px-30 grid gap-30 grid-cols-2  ">
-      <div className="w-full   sm:h-screen xl:h-[50rem] p-20 gap-5 flex flex-col h-screen">
+      <div className="w-full    sm:h-screen xl:h-[50rem] py-20 gap-5 flex flex-col h-screen">
         <h1 className="text-md">WELCOME TO MY WORLD</h1>
-        <h1 className="text-[60px] font-bold flex gap-4">
+        <h1 className="text-[60px] md:text-xl lg:text-4xl 2xl:text-[clamp(1rem, 5vw, 3rem)] xl:text-[3rem] font-bold flex gap-4">
           Hi, I'm{" "}
           <div className="text-[#ff014f]">
             <h1>Jone Lee</h1>
           </div>
         </h1>
         <div className="flex items-center">
-          <h1 className="flex gap-4 items-center text-5xl font-bold">
+          <h1 className="flex gap-4 items-center lg:text-4xl  text-5xl font-bold">
             a{" "}
-            <TypingAnimation className="text-5xl">
+            <TypingAnimation className="text-5xl md:text-4xl md:w-[20rem]  lg:text-4xl lg:w-[20rem] xl:w-[28rem]">
               {arrText[currentIndex]}
             </TypingAnimation>
           </h1>
         </div>
-        <div className="flex flex-wrap  w-[41rem] text-lg">
+        <div className="flex flex-wrap  text-wrap   w-full text-lg ">
           <h1>
             I use animation as a third dimension by which to simplify
             experiences and kuiding thro each and every interaction. I’m not
@@ -76,13 +76,11 @@ const Main = () => {
 
         </div>
       </div>
-      <div className=" flex justify-center items-center relative">
-        <div className="w-[28vw]  h-[60vh]   neuro-shadow relative top-12">
-          {" "}<img
+      <div className=" flex justify-center h-180 object-cover   overflow-hidden items-center relative">
+        <img
             src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/banner-01.png"
-            className="relative bottom-40"
+            className="relative w-120  -bottom-10 shadow-2xl shadow-red-100"
           />
-        </div>
       </div>
     </div>
   );

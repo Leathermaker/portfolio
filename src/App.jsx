@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import { TypingAnimation } from './components/UI/TypingAnimation'
 import Main from './components/Main'
 import GlobeDemo from './components/GlobeDemo'
+import { LampContainer } from './components/UI/lamp'
+import { LampDemo } from './components/Lamp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,11 @@ function App() {
       <Main/>
       <hr className='w-[80%] m-auto text-black h-[10px]'/>
     </div>
+    <div className='relative'>
+      <LampDemo/>
+    </div>
+
+    
     </>
   )
 }

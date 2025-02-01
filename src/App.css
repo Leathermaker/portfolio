@@ -19,3 +19,7 @@ background: #212428;
 box-shadow:  12px 12px 24px #141517,
              -12px -12px 24px #292b31;
 }
+
+.scroll-hidden::-webkit-scrollbar{
+  display: none;
+}
